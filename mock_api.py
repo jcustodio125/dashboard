@@ -3,12 +3,10 @@ from faker import Faker
 from typing import List
 from pydantic import BaseModel
 import random
-from datetime import datetime, timedelta
 
 app = FastAPI()
 fake = Faker("pt_BR")
 
-# Modelo para a venda
 class Venda(BaseModel):
     data: str
     produto: str

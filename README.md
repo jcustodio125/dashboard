@@ -1,4 +1,4 @@
-# dashboard# Dashboard de Vendas com API Mock
+# Dashboard de Vendas com API Mock
 
 Este projeto consiste em um dashboard Streamlit que exibe dados de vendas obtidos de uma API mockada construída com FastAPI.  O projeto é containerizado com Docker para facilitar a execução e garantir a consistência do ambiente.
 
@@ -15,8 +15,8 @@ Este projeto consiste em um dashboard Streamlit que exibe dados de vendas obtido
     Se você ainda não clonou o repositório, faça-o:
 
     ```bash
-    git clone <URL_DO_SEU_REPOSITORIO>
-    cd <NOME_DO_DIRETORIO_DO_PROJETO>  # Provavelmente "dashboard" no seu caso
+    git clone <https://github.com/jcustodio125/dashboard.git>
+    cd <dashboard>
     ```
 
 2.  **Execute com Docker Compose:**
@@ -59,11 +59,3 @@ Este projeto consiste em um dashboard Streamlit que exibe dados de vendas obtido
 ## Observações
 
 *   O dashboard tenta se conectar à API na URL `http://api:8000/vendas`.  Essa URL funciona dentro do ambiente Docker Compose, onde os serviços podem se comunicar pelo nome do serviço (`api`).  Se você quiser rodar o dashboard ou a API fora do Docker, precisará ajustar a URL no código do dashboard.
-
-*   O arquivo `.gitignore` especifica arquivos e diretórios que devem ser ignorados pelo Git (não versionados), como ambientes virtuais (`.venv`).
-
-## Próximos Passos (Opcional)
-
-*   **Personalização:** Modifique o `dashboard.py` para adicionar mais gráficos, filtros ou indicadores conforme suas necessidades.
-*   **Dados Reais:** Substitua a API mockada em `mock_api.py` por uma conexão com um banco de dados ou outra fonte de dados real.
-*   **Deploy:** Faça o deploy dos contêineres em um ambiente de produção usando plataformas como Heroku, AWS, Google Cloud, etc.
