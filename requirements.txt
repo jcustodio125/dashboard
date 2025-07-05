@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+faker
+pandas
+streamlit
+plotly
+requests
